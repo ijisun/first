@@ -15,6 +15,6 @@ function verticalIndicator(e) {
   verticalBar.style.top = e.offsetTop + e.offsetHeight + "px";
 };
 
-horizontalMenus.forEach((menu) => menu.addEventListener("click", (e) => horizontalIndicator(e.currentTarget)));
+horizontalMenus.forEach((menu) => menu.addEventListener("mouseover", (e) => horizontalIndicator(e.currentTarget)));
 
-verticalMenus.forEach((menu) => menu.addEventListener("mouseover", (e) => verticalIndicator(e.currentTarget)));
+verticalMenus.forEach((menu) => menu.addEventListener("click", (e) => verticalIndicator(e.currentTarget)));
